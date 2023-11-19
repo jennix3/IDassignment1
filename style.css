@@ -1,0 +1,80 @@
+body { background-color: #ebdfd1;
+    background-image: url('images/texture.jpg');
+    font-family: 'Libre Baskerville', serif;}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.center {
+text-align: center;
+  }
+
+.bottomnav
+{background-image: url('images/texture.jpg')}
+
+.topnav {
+    overflow: hidden;
+    background-image: url('images/texture.jpg')
+}
+
+.topnav a {
+    display: inline-block; /* Display the links in a line */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.topnav a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.topnav-right {
+    float: right;
+    margin-top: 45px;
+}
+
+footer{
+    background-image: url('images/texture.jpg')
+}
+
+.bottomnav a {
+    display: inline-block; /* Display the links in a line */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.bottomnav-right {
+    float: right;
+}
+
+h1{color: white;
+text-align: center;}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+select {
+    padding: 8px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
