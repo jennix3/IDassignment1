@@ -2,40 +2,54 @@
 <html lang="en">
 <head>
     <title>Home - Taylor Swift</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" />
+
     <style>
-        body {font-family: 'Libre Baskerville', serif;}
-      </style>
+        body {
+            background-image: url('images/texture2.jpg');
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+    </style>
 </head>
 <body>
-    
     <div class="container">
-        <div class="topnav">
-            <a href="index.html"><img src="images/tsicon.png" alt="taylor swift name" width="500" height="100"></a>
-        <div class="topnav-right">
-            <a href="index.html">Home</a>
-            <a href="tours.html">TS The Eras Tour</a>
-            <a href="albums.html">Albums</a>
+        <div class="navbar">
+            <div class="logo">
+              <img src="images/tsicon.png" alt="taylor swift icon">
             </div>
+            <div class="nav-right">
+              <a href="index.html">Home</a>
+              <div class="dropdown">
+                <button class="dropbtn">Tours</button>
+                <div class="dropdown-content">
+                  <a href="tours.html">The TS Eras Tour</a>
+                </div>
+              </div>
+              <a href="albums.html">Album</a>
+            </div>
+          </div>
+
+        <main>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KudedLV0tP0?si=Q0Fk0YWhTm9La3sM" title="YouTube video player" style="border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            </div>
+        </main>
+
+        <footer>
+            &copy; 2023 All rights reserved. Made by Jennifer.
+            <div class="container">
+                <div class="social-media">
+                  <a href="https://www.facebook.com/TaylorSwift/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/taylorswift13?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="social-icon"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/taylorswift/?hl=en" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </footer>
     </div>
 
-    <main>
-        <iframe width="1200" height="700" src="https://www.youtube.com/embed/KudedLV0tP0?si=jd-Z2S_82vY-HeEy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </main>
-
-    <footer>
-        &copy; 2023 All rights reserved.
-
-        <div class="bottomnav">
-            <a href="index.html"><img src="images/instagram.png" alt="taylor swift name" width="40" height="40"></a>
-            <a href="tours.html"><img src="images/youtube.png" alt="taylor swift name" width="40" height="40"></a>
-            <a href="albums.html"><img src="images/facebook.png" alt="taylor swift name" width="40" height="40"></a>
-        <div class="bottomnav-right">
-            </div>
-    </footer>
-</div>
+    <script src="script.js"></script>
 </body>
 </html>
