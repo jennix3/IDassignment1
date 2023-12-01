@@ -1,3 +1,8 @@
+body {
+    font-family: 'Courier New', monospace;
+    
+  }
+
 .container {
     max-width: 1300px;
     margin: 0 auto;
@@ -30,13 +35,13 @@ footer {
 .navbar a {
     color: #000000;
     text-decoration: none;
-    padding: 14px 16px;
     text-align: center;
     font-size: 25px;
+    padding: 10px;
 }
 
 .navbar a:hover {
-    background-color: #d2b48c84;
+    background-color: #d2b48cbd;
     color: rgb(255, 255, 255);
 }
 
@@ -62,6 +67,7 @@ footer {
     position: absolute;
     background-color: #f9f9f9;
     z-index: 1;
+    padding:10px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -136,31 +142,6 @@ img {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.form-container {
-    background-color: #fff;
-    border-radius: 3px;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-}
-
-select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
 button {
     background-color: #000000;
     color: #fff;
@@ -173,4 +154,38 @@ button {
 
 button:hover {
     background-color: #5945a0;
+}
+
+form {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 1700px;
+    justify-content: space-between;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(55, 0, 55);
 }
