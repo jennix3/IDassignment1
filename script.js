@@ -1,34 +1,27 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fadeIn();
-});
-
-function fadeIn() {
-    const body = document.body;
-    body.style.opacity = 1;
-}
-
-var slideIndex = 0;
-showSlides(slideIndex);
-
-function plusSlides(n) {
+    // Fade in the body once content is loaded
+    document.body.style.opacity = 1;
+  });
+  
+  // Slideshow functionality (if you add slides with class "mySlides")
+  let slideIndex = 0;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
     showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-
-    if (n >= slides.length) {
-        slideIndex = 0;
+  }
+  
+  function showSlides(n) {
+    const slides = document.getElementsByClassName("mySlides");
+    if (slides.length === 0) return; // Exit if no slides are found
+  
+    slideIndex = (n >= slides.length) ? 0 : (n < 0 ? slides.length - 1 : n);
+  
+    // Hide all slides
+    for (let slide of slides) {
+      slide.style.display = "none";
     }
-
-    if (n < 0) {
-        slideIndex = slides.length - 1;
-    }
-
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
+    // Show the current slide
     slides[slideIndex].style.display = "block";
-}
+  }
+  
