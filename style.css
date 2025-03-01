@@ -1,209 +1,250 @@
 /* Global Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background: url('images/texture2.jpg') no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    color: #333;
-  }
-  
-  /* Navbar */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: url('images/texture.jpg') repeat;
-    padding: 10px 20px;
-  }
-  
-  .logo img {
-    height: 60px;
-  }
-  
-  .nav-links a {
-    font-family: 'Playfair Display', serif;
-    color: #000;
-    text-decoration: none;
-    font-size: 25px;
-    margin: 0 10px;
-    padding: 10px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    transition: color 0.3s ease;
-    white-space: nowrap;
-  }
-  
-  .nav-links a:hover {
-    color: #5945a0;
-    background-color: transparent;
-    text-shadow: none;
-  }
-  
-  /* Dropdown */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    padding: 10px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    min-width: 160px;
-    white-space: nowrap;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .responsive-image {
-    width: 100%;       /* Adjusts to the container's width */
-    height: 600px;     /* Set a fixed height */
-    object-fit: cover; /* Crop and scale the image to fill the container */
-  }
-  
-  
-  /* Slideshow Container */
-  .slideshow-container {
-    position: relative;
-    padding-bottom: 46.15%; /* Maintain aspect ratio for 1300x600 */
-    height: 0;
-    overflow: hidden;
-    margin: 20px auto;
-  }
-  
-  .slideshow-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-  
-  /* Slideshow Navigation */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    padding: 16px;
-    color: #000;
-    font-weight: bold;
-    font-size: 24px;
-    user-select: none;
-    transition: color 0.3s ease;
-  }
-  
-  .prev:hover, .next:hover {
-    color: #5945a0;
-  }
-  
-  .prev {
-    left: 0;
-  }
-  
-  .next {
-    right: 0;
-  }
-  
-  /* Ticket Form */
-  .ticket-form form {
-    background: #fff;
-    padding: 20px;
-    max-width: 1300px;
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-  }
-  
-  .ticket-form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-  
-  .ticket-form input,
-  .ticket-form select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-  }
-  
-  .ticket-form button {
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s ease;
-  }
-  
-  .ticket-form button:hover {
-    background-color: #5945a0;
-  }
-  
-  /* Footer */
-  footer {
-    background: url('images/texture.jpg') repeat;
-    padding: 20px;
-    text-align: center;
-    color: #000;
-  }
-  
-  .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-  }
-  
-  .social-links a {
-    background-color: #000;
-    color: #fff;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    text-decoration: none;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .social-links a:hover {
-    background-color: #5945a0;
-    transform: scale(1.1);
-  }
-  
-  /* Video Container (Centering the iframe) */
+  font-family: 'Roboto', sans-serif;
+  background: url('images/texture2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url('images/texture.jpg') repeat;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.nav-links a {
+  font-family: 'Playfair Display', serif;
+  color: #000;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 0 10px;
+  padding: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  color: #5945a0;
+  background-color: transparent;
+  text-shadow: none;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  padding: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 160px;
+  white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* 1. Responsive images without forced height */
+.responsive-image {
+width: 100%;
+height: auto;       /* Prevent images from being cut off */
+display: block;     /* Removes default inline spacing */
+object-fit: cover;  /* If you want to fill container (may crop edges) */
+/* Use object-fit: contain; if you want the entire image visible without cropping */
+}
+
+/* 2. Centered, responsive slideshow container (with padding-bottom trick) */
+.slideshow-container {
+position: relative;
+max-width: 1300px;   /* or 100% if you want it to fill screen width */
+margin: 20px auto;   /* center the container */
+overflow: hidden;
+padding-bottom: 56.25%; /* 16:9 aspect ratio via padding trick */
+height: 0;           /* container’s height is controlled by padding-bottom */
+}
+
+/* The iframes fill the container automatically */
+.slideshow-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border: none;
+}
+
+/* Slideshow Navigation */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+padding: 16px;
+color: #000;
+font-weight: bold;
+font-size: 24px;
+user-select: none;
+transition: color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+color: #5945a0;
+}
+
+.prev {
+left: 0;
+}
+
+.next {
+right: 0;
+}
+
+/* 3. Nicer ticket form layout */
+.ticket-form {
+max-width: 600px; /* narrower form container */
+margin: 40px auto; /* center + space above/below */
+background: rgba(255, 255, 255, 0.9); /* slight transparency if desired */
+padding: 20px;
+border-radius: 8px; /* rounded corners */
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ticket-form form {
+display: flex;
+flex-direction: column;
+gap: 16px; /* spacing between form fields */
+}
+
+.ticket-form label {
+font-weight: bold;
+margin-bottom: 4px;
+}
+
+.ticket-form input,
+.ticket-form select {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;  /* subtle border */
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+.ticket-form button {
+background-color: #000;
+color: #fff;
+padding: 12px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+font-size: 16px;
+}
+
+.ticket-form button:hover {
+background-color: #5945a0;
+}
+
+/* 4. Map Section */
+.map img {
+width: 100%;
+height: auto;
+display: block;
+object-fit: contain; /* or cover, depending on your preference */
+}
+
+/* Footer */
+footer {
+background: url('images/texture.jpg') repeat;
+padding: 20px;
+text-align: center;
+color: #000;
+}
+
+.social-links {
+display: flex;
+justify-content: center;
+gap: 15px;
+margin-top: 10px;
+}
+
+.social-links a {
+background-color: #000;
+color: #fff;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 20px;
+text-decoration: none;
+transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-links a:hover {
+background-color: #5945a0;
+transform: scale(1.1);
+}
+
+/* Video Container (Centering the iframe, if used outside the slideshow) */
 .video-container {
-    position: relative;
-    max-width: 1300px;      /* or any width you prefer */
-    margin: 20px auto;      /* auto left & right centers the container */
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-  }
-  
-  .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;            /* Fill the container's width */
-    height: 100%;           /* Fill the container's height */
-    border: none;
-  }
-  
+position: relative;
+max-width: 1300px; /* or any width you prefer */
+margin: 20px auto; /* auto left & right centers the container */
+padding-bottom: 56.25%; /* 16:9 aspect ratio */
+height: 0;
+overflow: hidden;
+}
+
+.video-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border: none;
+}
+
+/* Make an album or video gallery fill the entire screen width, if needed */
+.album-gallery {
+display: flex;
+flex-direction: column; /* Stack items vertically */
+gap: 0;                 /* No spacing between items */
+width: 100%;            /* Take full width of the browser */
+margin: 0;
+padding: 0;
+}
+
+.album-gallery a {
+display: block;
+width: 100%;
+margin: 0;
+padding: 0;
+text-align: left; /* Or center, if you prefer */
+}
+
+.album-gallery img,
+.album-gallery video {
+display: block;
+width: 100%;
+height: auto;
+object-fit: cover; /* If you have a fixed height, it will crop instead of squishing */
+}

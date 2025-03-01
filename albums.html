@@ -1,67 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Albums - Taylor Swift</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <style>
-        .video-container {
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .video-container video {
-            width: 100%;
-            height: auto;
-        }
-            body{background-image: url("images/texture2.jpg");
-            opacity: 0;
-        transition: opacity 1s ease-in-out;}
-          </style>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Albums - Taylor Swift</title>
+  <!-- Google Fonts for better typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 <body>
-    <div class="container">
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="images/tsicon.png" alt="Taylor Swift Logo" style="height: 60px;">
-            </div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <div class="dropdown">
-                    <a href="#">Tours</a>
-                    <div class="dropdown-content">
-                        <a href="tours.html">The TS Eras Tour</a>
-                    </div>
-                </div>
-                <a href="albums.html">Albums</a>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <div class="albums">
-            <a href="https://taylor.lnk.to/1989taylorsversion"><img src="images/album1.jpg" alt="1989" width="1200" height="700"></a>
-            <a href="https://taylor.lnk.to/1989taylorsversion"><img src="images/album2.jpg" alt="1989" width="1200" height="700"></a>
-            <a href="https://taylor.lnk.to/1989taylorsversion"><img src="images/album3.jpg" alt="1989" width="1200" height="700"></a>
+  <!-- Header / Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/tsicon.png" alt="Taylor Swift Logo" height="60">
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="#">Tours</a>
+        <div class="dropdown-content">
+          <a href="tours.html">The TS Eras Tour</a>
         </div>
-            <div class="video-container">
-            <a href="https://store.taylorswift.com/collections/music-products">
-                <video width="1800" height="700" autoplay muted>
-                    <source src="images/video1.mp4" type="video/mp4">
-                </video>
-            </a>
-            </div>
-    </main>
+      </div>
+      <a href="albums.html">Albums</a>
+    </nav>
+  </header>
 
-    <footer> &copy; 2023 All rights reserved. Made by Jennifer.
-        <div class="bottomnav">
-            <a href="https://www.facebook.com/TaylorSwift/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com/taylorswift13?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/taylorswift/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-        </div>
-    </footer>
-</div>
-<script src="script.js"></script>
+  <main>
+    <section class="album-gallery">
+      <!-- Three album images -->
+      <a href="https://taylor.lnk.to/1989taylorsversion" target="_blank">
+        <img src="images/album1.jpg" alt="Album 1">
+      </a>
+      <a href="https://taylor.lnk.to/1989taylorsversion" target="_blank">
+        <img src="images/album2.jpg" alt="Album 2">
+      </a>
+      <a href="https://taylor.lnk.to/1989taylorsversion" target="_blank">
+        <img src="images/album3.jpg" alt="Album 3">
+      </a>
+      <a href="https://store.taylorswift.com/collections/music-products" target="_blank">
+        <video autoplay muted>
+          <source src="images/video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 All rights reserved. Made by Jennifer.</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/TaylorSwift/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com/taylorswift13" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/taylorswift/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
