@@ -75,7 +75,7 @@ object-fit: cover;  /* If you want to fill container (may crop edges) */
 /* 2. Centered, responsive slideshow container (with padding-bottom trick) */
 .slideshow-container {
 position: relative;
-max-width: 1300px;   /* or 100% if you want it to fill screen width */
+max-width: 100%;
 margin: 20px auto;   /* center the container */
 overflow: hidden;
 padding-bottom: 56.25%; /* 16:9 aspect ratio via padding trick */
@@ -119,7 +119,7 @@ right: 0;
 
 /* 3. Nicer ticket form layout */
 .ticket-form {
-max-width: 600px; /* narrower form container */
+max-width: 100%;
 margin: 40px auto; /* center + space above/below */
 background: rgba(255, 255, 255, 0.9); /* slight transparency if desired */
 padding: 20px;
@@ -207,7 +207,7 @@ transform: scale(1.1);
 /* Video Container (Centering the iframe, if used outside the slideshow) */
 .video-container {
 position: relative;
-max-width: 1300px; /* or any width you prefer */
+max-width: 100%;
 margin: 20px auto; /* auto left & right centers the container */
 padding-bottom: 56.25%; /* 16:9 aspect ratio */
 height: 0;
